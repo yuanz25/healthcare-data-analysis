@@ -110,8 +110,13 @@ For analysing operations:
 I’m using Microsoft SQL Server Management Studio
 
 Key SQL Skills Demonstrated:
+
 **Data Aggregation & Grouping**: Used GROUP BY, COUNT(), AVG(), and SUM() to analyze trends in medical conditions, billing costs, and patient demographics.
+
 **Filtering & Conditional Logic**: Applied WHERE, HAVING, and CASE statements to refine data analysis.
+
 **Date & Time Analysis**: Utilized MONTH(), YEAR(), and DATEDIFF() to track patient admissions and calculate length of stay.
+
 **Joins & Relationships**: Used Self Joins to identify repeat patient admissions and standard INNER JOIN for demographic segmentation.
+
 **Window Functions**: Implemented RANK(), DENSE_RANK(), and PARTITION BY to rank hospitals based on billing costs and compare patient statistics.
