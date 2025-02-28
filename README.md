@@ -43,11 +43,13 @@ This project transforms data insights into practical recommendations for:
 1. Data Cleanup & Initial Exploration using Excel/Power Query
 
 (a) Inspect the **column names and data types**.
-    - **Convert date, number, and currency columns** to proper format.
-        - Changed formatting of “Billing Amount” from Numbers > Currency
-    - **Convert categorical data** into structured formats (e.g., date formats, text to numbers).
-    - **Create calculated columns.**
-        - “Age Category” range:
+
+Convert date, number, and currency columns to proper format.
+- Changed formatting of “Billing Amount” from Numbers > Currency
+
+Convert categorical data** into structured formats (e.g., date formats, text to numbers).
+- Create calculated columns.
+  (i) “Age Category” range:
             
             ```
              0-18 years → Paediatrics
@@ -55,14 +57,15 @@ This project transforms data insights into practical recommendations for:
              65+ years → Geriatrics #Different hospitals may have different cut-offs
             ```
             
-        - “Length of Stay”
-            - *Ensure both the “Admission Date” and “Discharge Date” columns are in date format
+  (ii) “Length of Stay” column:
+            - Ensure both the “Admission Date” and “Discharge Date” columns are in date format
             - New Custom Column: [Discharge Date] - [Admission Date]
             - Under Transform: Change data type to “Days”
+
         
 (b) Detect **inconsistent or strange data**.
-    - **Standardized text formatting** (For Name: removed extra spaces using TRIM, converted to “Capitalize Each Word”).
-- Examine **summary statistics** for all variables and identify if any missing values (fill in with appropriate data or remove irrelevant column).
+ Standardized text formatting (For Name: removed extra spaces using TRIM, converted to “Capitalize Each Word”).
+- Examine summary statistics for all variables and identify if any missing values (fill in with appropriate data or remove irrelevant column).
     
     
 (c) Remove duplicates
