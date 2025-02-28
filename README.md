@@ -70,11 +70,10 @@ Convert categorical data** into structured formats (e.g., date formats, text to 
     
     
 (c) Remove duplicates
-    - I did not perform this step as same patient name can appear due to multiple admissions. Using unique identifiers such as **Admission ID** /**Visit ID would be better** instead of just "Patient Name.".
-    - To check if there were multiple admissions. Group by Patient Name & Count Entries - which is present in this dateset.
+I did not perform this step as same patient name can appear due to multiple admissions.
+Using unique identifiers such as **Admission ID** /**Visit ID would be better** instead of just "Patient Name.". 
         
         
-
 **📌 Identifying Key Columns**
 
 Relevant Columns for Analysis
@@ -84,11 +83,6 @@ Relevant Columns for Analysis
 - **Test Results** – Identifies patterns in medical diagnosis.
 - **Age** – Examines cost variations by age group.
 - **Insurance Provider** – Compares billing differences across insurers.
-
-Less Relevant Columns:
-- **Room Number** – Not meaningful for cost or medical trends. - **Removed**
-- **Doctor’s Name** – Not useful for generalized analysis.
-- **Hospital Name** – Only relevant if comparing different hospitals.
 
 
 **📌 Key Analytical Questions**
@@ -110,7 +104,6 @@ For analysing operations:
 I’m using Microsoft SQL Server Management Studio
 
 Key SQL Skills Demonstrated:
-
 **Data Aggregation & Grouping**: Used GROUP BY, COUNT(), AVG(), and SUM() to analyze trends in medical conditions, billing costs, and patient demographics.
 
 **Filtering & Conditional Logic**: Applied WHERE, HAVING, and CASE statements to refine data analysis.
