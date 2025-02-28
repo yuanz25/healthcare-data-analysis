@@ -4,6 +4,7 @@ This project leverages data from **55,500 patient records** to uncover key fac
 Dataset from: https://www.kaggle.com/datasets/prasad22/healthcare-dataset/data
 
 **🎯 Goals**
+
 **1. Optimize Resource Allocation**
 Efficiently utilize healthcare resources to improve patient outcomes.
 
@@ -92,26 +93,18 @@ Less Relevant Columns:
 
 **📌 Key Analytical Questions**
 
-1. **What are the most common medical conditions among different age groups?**
-    - How does age influence the prevalence of specific health conditions?
-2. **Is there a correlation between length of stay and billing amount?**
-    - Do longer hospital stays result in significantly higher costs?
-3. **How do insurance providers impact hospital billing amounts?**
-    - Which insurance providers have the highest or lowest average billing?
-4. **What patterns exist in admission types (emergency vs. routine) across hospitals?**
-    - Are certain hospitals handling more emergency admissions than others?
-5. **Are specific medical conditions more prevalent in certain demographics (e.g., age, gender)?**
-    - What trends can be identified by analyzing patient demographics?
-6. **Which medical conditions contribute the most to high hospital costs?**
-    - Are chronic conditions driving significantly higher expenses?
-7. **Are there seasonal trends in hospital admissions and billing amounts?**
-    - Do admissions spike during specific months or seasons?
-8. **How do test results correlate with hospital stay duration?**
-    - Do abnormal test results indicate longer stays?
-9. **What is the average billing amount by medical condition?**
-    - Are there specific conditions that consistently incur higher costs?
-10. **Do male and female patients show significant differences in hospital billing?**
-    - How do gender-related trends impact healthcare expenses?
+For analysing Medical Conditions:
+- What are the most common medical conditions among different age groups?
+- Are specific medical conditions more prevalent in certain demographics (e.g., age, gender)?
+- Which medical conditions contribute the most to high hospital costs?
+- What is the average billing amount by medical condition?
+
+For analysing operations:
+- Is there a correlation between length of stay and billing amount?
+- What patterns exist in admission types (emergency vs. routine) across hospitals?
+- Are there seasonal trends in hospital admissions?
+
+
 
 ## 2. Using SQL to analyse
 I’m using Microsoft SQL Server Management Studio
