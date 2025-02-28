@@ -101,9 +101,8 @@ For analysing operations:
 
 
 ## 2. Using SQL to analyse
-I’m using Microsoft SQL Server Management Studio
+I’m using Microsoft SQL Server Management Studio. Key SQL Skills Demonstrated:
 
-Key SQL Skills Demonstrated:
 **Data Aggregation & Grouping**: Used GROUP BY, COUNT(), AVG(), and SUM() to analyze trends in medical conditions, billing costs, and patient demographics.
 
 **Filtering & Conditional Logic**: Applied WHERE, HAVING, and CASE statements to refine data analysis.
