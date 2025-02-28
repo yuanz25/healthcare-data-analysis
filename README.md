@@ -109,19 +109,9 @@ For analysing operations:
 ## 2. Using SQL to analyse
 I’m using Microsoft SQL Server Management Studio
 
-SQL queries done: 
-
-- Find the most common medical condition
-- Find the average billing cost by medical condition
-- Find average length of stay by medical condition
-- Find most commonly prescribed medications
-- Find the most common admission types
-- Identify patient demographics
-    - Which age group is most affected by each condition?
-    - What is the average age of patients for each condition?
-- Distribution by gender
-    - Are some conditions more common in males or females?
-- Find Insurance provider distribution among patients
-- Monthly admission trend
-- Determine which hospitals have the highest average billing amount per patient. (Using Windows function)
-- Find patients and their medical condition who had multiple admissions (Using self join)
+Key SQL Skills Demonstrated:
+**Data Aggregation & Grouping**: Used GROUP BY, COUNT(), AVG(), and SUM() to analyze trends in medical conditions, billing costs, and patient demographics.
+**Filtering & Conditional Logic**: Applied WHERE, HAVING, and CASE statements to refine data analysis.
+**Date & Time Analysis**: Utilized MONTH(), YEAR(), and DATEDIFF() to track patient admissions and calculate length of stay.
+**Joins & Relationships**: Used Self Joins to identify repeat patient admissions and standard INNER JOIN for demographic segmentation.
+**Window Functions**: Implemented RANK(), DENSE_RANK(), and PARTITION BY to rank hospitals based on billing costs and compare patient statistics.
