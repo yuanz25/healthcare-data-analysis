@@ -20,11 +20,11 @@ Pinpoint areas where hospitals can reduce unnecessary expenses.
 > Frequently prescribed drugs and their cost impact - is there generic medication substituions?
 
 
-**📌 Expected Outcome**
-This project transforms data insights into practical recommendations for:
 
-- Better **patient care**.
-- More **cost-effective hospital management**.
+**📌 Expected Outcome**
+This project transforms data insights into practical recommendations for more **cost-effective hospital management** and better **patient care**.
+
+
 
 **Data Dictionary**
 
@@ -89,7 +89,7 @@ Relevant Columns for Analysis
 - **Insurance Provider** – Compares billing differences across insurers.
 
 
-**📌 Key Analytical Questions**
+**📌 More Analytical Questions to explore on**
 
 For analysing Operations:
 - Is there a correlation between length of stay and billing amount?
