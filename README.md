@@ -1,6 +1,6 @@
 **📊 Project Summary**
 
-This project leverages data from **55,500 patient records** to uncover key factors influencing **hospital costs**, **admissions**, and **patient outcomes**. Through data analysis, we aim to identify trends in **medical conditions** and **billing patterns**.
+This project leverages data from **55,500 patient records** to uncover key factors influencing **hospital costs**, **admissions**, and **patient outcomes**.
 Dataset from: https://www.kaggle.com/datasets/prasad22/healthcare-dataset/data
 
 **🎯 Goals**
