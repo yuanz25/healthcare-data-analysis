@@ -49,11 +49,11 @@ Convert categorical data** into structured formats (e.g., date formats, text to 
 - Create calculated columns.
   (i) “Age Category” range:
             
-            ```
+            
              0-18 years → Paediatrics
              19-65 years → Adults
              65+ years → Geriatrics #Different hospitals may have different cut-offs
-            ```
+            
             
   (ii) “Length of Stay” column:
             - Ensure both the “Admission Date” and “Discharge Date” columns are in date format
