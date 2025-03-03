@@ -7,9 +7,14 @@ Dataset from: https://www.kaggle.com/datasets/prasad22/healthcare-dataset/data
 
 **1. Optimize Resource Allocation**
 Efficiently utilize healthcare resources to improve patient outcomes.
+> Conditions with longest hospital stays for better discharge planning
+> Medical conditions that require more resources
+> Readmission rates
 
 **2. Identify Cost Reduction Opportunities**
 Pinpoint areas where hospitals can reduce unnecessary expenses.
+> Conditions with highest treatment conditions - can the expenses can be reduced?
+> Frequently prescribed drugs and their cost impact - is there generic medication substituions?
 
 
 **📌 Expected Outcome**
