@@ -111,10 +111,15 @@ I’m using Microsoft SQL Server Management Studio. Key SQL Skills Demonstrated:
 **Window Functions**: Implemented RANK(), DENSE_RANK(), and PARTITION BY to rank hospitals based on billing costs and compare patient statistics.
 
 Key insights:
+
 Top Conditions: #1 Arthritis (9,308 cases), followed by Diabetes (9,304), HTN (9,245), Obesity (9,231), Cancer (9,227), and Asthma (9,185).
+
 Billing Cost per Condition: Obesity ($25,806) incurs the highest average billing cost, followed by Diabetes ($25,638) and Asthma ($25,635).
+
 Length of Stay: Certain conditions require a longer hospital stay, impacting resource allocation and costs.
+
 📌 Insight: Chronic conditions like obesity, diabetes, and arthritis drive hospital costs, suggesting a focus on preventive care programs to reduce long-term healthcare spending.
 
 Certain patients had multiple hospital visits, indicating poor disease management.
+
 📌 Insight: Identifying frequent readmissions and its related medical conditions can help in reducing unnecessary costs by focusing on post-discharge care and chronic disease management. To have targeted interventions for high-readmission patients to improve long-term healthcare outcomes.
