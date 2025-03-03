@@ -11,15 +11,12 @@ Efficiently utilize healthcare resources to improve patient outcomes.
 **2. Identify Cost Reduction Opportunities**
 Pinpoint areas where hospitals can reduce unnecessary expenses.
 
-**3. Enhance Healthcare Management**
-Provide actionable strategies to improve care quality and streamline operations.
 
 **📌 Expected Outcome**
 This project transforms data insights into practical recommendations for:
 
 - Better **patient care**.
 - More **cost-effective hospital management**.
-- Improved **decision-making processes** in healthcare.
 
 **Data Dictionary**
 
@@ -77,7 +74,6 @@ Using unique identifiers such as **Admission ID** /**Visit ID would be better** 
 **📌 Identifying Key Columns**
 
 Relevant Columns for Analysis
-- **Billing Amount** – Helps analyze hospital cost distribution.
 - **Admission Type** – Distinguishes emergency vs. routine cases.
 - **Medical Condition** – Determines which illnesses drive higher costs.
 - **Test Results** – Identifies patterns in medical diagnosis.
@@ -87,16 +83,17 @@ Relevant Columns for Analysis
 
 **📌 Key Analytical Questions**
 
+For analysing Operations:
+- Is there a correlation between length of stay and billing amount?
+- What patterns exist in admission types (emergency vs. routine) across hospitals?
+- Are there seasonal trends in hospital admissions?
+
 For analysing Medical Conditions:
 - What are the most common medical conditions among different age groups?
 - Are specific medical conditions more prevalent in certain demographics (e.g., age, gender)?
 - Which medical conditions contribute the most to high hospital costs?
 - What is the average billing amount by medical condition?
 
-For analysing operations:
-- Is there a correlation between length of stay and billing amount?
-- What patterns exist in admission types (emergency vs. routine) across hospitals?
-- Are there seasonal trends in hospital admissions?
 
 
 
@@ -112,3 +109,12 @@ I’m using Microsoft SQL Server Management Studio. Key SQL Skills Demonstrated:
 **Joins & Relationships**: Used Self Joins to identify repeat patient admissions and standard INNER JOIN for demographic segmentation.
 
 **Window Functions**: Implemented RANK(), DENSE_RANK(), and PARTITION BY to rank hospitals based on billing costs and compare patient statistics.
+
+Key insights:
+Top Conditions: #1 Arthritis (9,308 cases), followed by Diabetes (9,304), HTN (9,245), Obesity (9,231), Cancer (9,227), and Asthma (9,185).
+Billing Cost per Condition: Obesity ($25,806) incurs the highest average billing cost, followed by Diabetes ($25,638) and Asthma ($25,635).
+Length of Stay: Certain conditions require a longer hospital stay, impacting resource allocation and costs.
+📌 Insight: Chronic conditions like obesity, diabetes, and arthritis drive hospital costs, suggesting a focus on preventive care programs to reduce long-term healthcare spending.
+
+Certain patients had multiple hospital visits, indicating poor disease management.
+📌 Insight: Identifying frequent readmissions and its related medical conditions can help in reducing unnecessary costs by focusing on post-discharge care and chronic disease management. To have targeted interventions for high-readmission patients to improve long-term healthcare outcomes.
