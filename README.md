@@ -46,14 +46,12 @@ This project transforms data insights into practical recommendations for more *
 | **Medication** | Prescribed drugs | String | Insulin |
 | **Test Results** | Medical test outcomes | String | Normal |
 
-1. Data Cleanup & Initial Exploration using Excel/Power Query
+
+**1. Data Cleanup & Initial Exploration using Excel/Power Query**
 
 (a) Inspect the **column names and data types**.
-
-Convert date, number, and currency columns to proper format.
+- Convert date, number, and currency columns to proper structured format.
 - Changed formatting of “Billing Amount” from Numbers > Currency
-
-Convert categorical data** into structured formats (e.g., date formats, text to numbers).
 - Create calculated columns.
   (i) “Age Category” range:
             
@@ -70,23 +68,15 @@ Convert categorical data** into structured formats (e.g., date formats, text to 
 
         
 (b) Detect **inconsistent or strange data**.
- Standardized text formatting (For Name: removed extra spaces using TRIM, converted to “Capitalize Each Word”).
+- Standardized text formatting (For Name: removed extra spaces using TRIM, converted to “Capitalize Each Word”).
 - Examine summary statistics for all variables and identify if any missing values (fill in with appropriate data or remove irrelevant column).
     
     
 (c) Remove duplicates
 I did not perform this step as same patient name can appear due to multiple admissions.
-Using unique identifiers such as **Admission ID** /**Visit ID would be better** instead of just "Patient Name.". 
+Having unique identifiers such as **Admission ID** /**Visit ID would be better** instead of just "Patient Name.". 
         
         
-**📌 Identifying Key Columns**
-
-Relevant Columns for Analysis
-- **Admission Type** – Distinguishes emergency vs. routine cases.
-- **Medical Condition** – Determines which illnesses drive higher costs.
-- **Test Results** – Identifies patterns in medical diagnosis.
-- **Age** – Examines cost variations by age group.
-- **Insurance Provider** – Compares billing differences across insurers.
 
 
 **📌 More Analytical Questions to explore on**
@@ -120,7 +110,7 @@ I’m using Microsoft SQL Server Management Studio. Key SQL Skills Demonstrated:
 
 
 
-Key insights:
+**Key insights**:
 
 - Top Conditions: #1 Arthritis (9,308 cases), followed by Diabetes (9,304), HTN (9,245), Obesity (9,231), Cancer (9,227), and Asthma (9,185).
 
