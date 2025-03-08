@@ -97,13 +97,13 @@ For analysing Medical Conditions:
 ## 2. Using SQL to do further data cleaning and aggregation 
 I’m using Microsoft SQL Server Management Studio. 
 
-**Negative Billing Amounts: ** 
+**Negative Billing Amounts:** 
 - Identified that several entries for Billing Amount were negative, which could be indicative of data errors (refunds, billing adjustments, etc.).
 - Removed these entries from the dataset to prevent them from skewing the analysis and visualizations, particularly when focusing on understanding patient costs and billing trends.
 - This decision was made with the goal of providing a more accurate representation of the actual charges incurred during hospital stays.
 
 
-**Duplicate Patient Records: **
+**Duplicate Patient Records:**
 - Used Common Table Expression CTE to identify duplicate patient records in the dataset. Duplicates were defined as having the same Name, Date of Admission, Medical Condition, and Insurance Provider. 
 - The query revealed **10,977 rows** with duplicates where all columns were identical except for Age, suggesting that these were likely the same patients with multiple admissions or data entry inconsistencies.
 - To resolve this, we decided to retain only the first occurrence of each duplicate record. We used CTE with the ROW_NUMBER() Windows function.
@@ -112,8 +112,8 @@ I’m using Microsoft SQL Server Management Studio.
 
 
 
-Key SQL Skills Demonstrated:
 
+Key SQL Skills Demonstrated:
 **Data Aggregation & Grouping**: Used GROUP BY, COUNT(), AVG(), and SUM() to analyze trends in medical conditions, billing costs, and patient demographics.
 
 **Filtering & Conditional Logic**: Applied WHERE, HAVING, and CASE statements to refine data analysis.
