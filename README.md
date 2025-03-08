@@ -6,18 +6,21 @@ Dataset from: https://www.kaggle.com/datasets/prasad22/healthcare-dataset/data
 **🎯 Goals**
 
 **1. Optimize Resource Allocation**
-Efficiently utilize healthcare resources to improve patient outcomes.
-> Conditions with longest hospital stays for better discharge planning
-> 
-> Medical conditions that require more resources
-> 
-> Readmission rates
+Efficiently utilize healthcare resources to improve patient outcomes through identifying factors that influence hospital billing amounts. Pinpoint areas where hospitals can reduce unnecessary expenses.
+>
+> Key metrics:
+>- Average billing amount by medical condition, hospital and admission type
+>- Average length of stay by condition 
 
-**2. Identify Cost Reduction Opportunities**
-Pinpoint areas where hospitals can reduce unnecessary expenses.
-> Conditions with highest treatment conditions - can the expenses can be reduced?
-> 
-> Frequently prescribed drugs and their cost impact - is there generic medication substituions?
+
+**2. Patient Demographics & Admission Trends**
+> Understand patient demographics to improve services
+>
+> Key metrics:
+> - Patient distribution by age and gender
+> - Most common medical conditions by age group
+> - Admission type breakdown by gender and hospital
+> - Average length of stay by medical condition
 
 
 
@@ -69,6 +72,7 @@ This project transforms data insights into practical recommendations for more *
         
 (b) Detect **inconsistent or strange data**.
 - Standardized text formatting (For Name: removed extra spaces using TRIM, converted to “Capitalize Each Word”).
+- Standardized number formatting (Billling amount to currency) 
 - Examine summary statistics for all variables and identify if any missing values (fill in with appropriate data or remove irrelevant column).
     
     
