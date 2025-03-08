@@ -74,16 +74,11 @@ This project transforms data insights into practical recommendations for more *
 - Standardized text formatting (For Name: removed extra spaces using TRIM, converted to “Capitalize Each Word”).
 - Standardized number formatting (Billling amount to currency) 
 - Examine summary statistics for all variables and identify if any missing values (fill in with appropriate data or remove irrelevant column).
+- Noticed multiple records with the same patient names but varying Age, Admission Date, and other details. This was flagged as a **potential data quality issue ** due to inconsistent handling of duplicate entries. Ideally, using a unique identifier such as Admission ID or Visit ID would resolve this issue. Decided not to remove duplicates based solely on Patient Name, since multiple admissions are common for the same patient.
     
-    
-(c) Remove duplicates
-I did not perform this step as same patient name can appear due to multiple admissions.
-Having unique identifiers such as **Admission ID** /**Visit ID would be better** instead of just "Patient Name.". 
-        
-        
+      
 
-
-**📌 More Analytical Questions to explore on**
+**📌 More Analytical Questions to explore on with Pivot Tables**
 
 For analysing Operations:
 - Is there a correlation between length of stay and billing amount?
@@ -99,8 +94,25 @@ For analysing Medical Conditions:
 
 
 
-## 2. Using SQL to analyse
-I’m using Microsoft SQL Server Management Studio. Key SQL Skills Demonstrated:
+## 2. Using SQL to do further data cleaning and aggregation 
+I’m using Microsoft SQL Server Management Studio. 
+
+**Negative Billing Amounts: ** 
+- Identified that several entries for Billing Amount were negative, which could be indicative of data errors (refunds, billing adjustments, etc.).
+- Removed these entries from the dataset to prevent them from skewing the analysis and visualizations, particularly when focusing on understanding patient costs and billing trends.
+- This decision was made with the goal of providing a more accurate representation of the actual charges incurred during hospital stays.
+
+
+**Duplicate Patient Records: **
+- Used Common Table Expression CTE to identify duplicate patient records in the dataset. Duplicates were defined as having the same Name, Date of Admission, Medical Condition, and Insurance Provider. 
+- The query revealed **10,977 rows** with duplicates where all columns were identical except for Age, suggesting that these were likely the same patients with multiple admissions or data entry inconsistencies.
+- To resolve this, we decided to retain only the first occurrence of each duplicate record. We used CTE with the ROW_NUMBER() Windows function.
+- After cleaning the duplicates, a final query was run to verify that no duplicates remained in the dataset:
+
+
+
+
+Key SQL Skills Demonstrated:
 
 **Data Aggregation & Grouping**: Used GROUP BY, COUNT(), AVG(), and SUM() to analyze trends in medical conditions, billing costs, and patient demographics.
 
