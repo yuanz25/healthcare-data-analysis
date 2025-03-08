@@ -105,10 +105,9 @@ I’m using Microsoft SQL Server Management Studio.
 
 **Duplicate Patient Records:**
 - Used Common Table Expression CTE to identify duplicate patient records in the dataset. Duplicates were defined as having the same Name, Date of Admission, Medical Condition, and Insurance Provider. 
-- The query revealed **10,977 rows** with duplicates where all columns were identical except for Age, suggesting that these were likely the same patients with multiple admissions or data entry inconsistencies.
-- To resolve this, we decided to retain only the first occurrence of each duplicate record. We used CTE with the ROW_NUMBER() Windows function.
-- After cleaning the duplicates, a final query was run to verify that no duplicates remained in the dataset:
-
+- The query revealed **10,977 rows** with duplicates where all columns were identical except for Age, suggesting that these were likely the same patients with inconsistent data entry.
+- To resolve this, we decided to retain only the first occurrence of each duplicate record. We used CTE with the ROW_NUMBER() Windows function where the MAX(Age) to keep only the maximum age, assuming it's updated over time.
+- After cleaning the duplicates, a query was run to verify that no duplicates remained in the dataset
 
 
 
@@ -126,16 +125,15 @@ Key SQL Skills Demonstrated:
 
 
 
-**Key insights**:
+**Optimizing Resource Allocation**
+- Average Medical Cost by Medical Condition: #1 Obesity $25844, #2 Asthma $25805 #3 Diabetes $25716, #4 HTN $25546, #5 Arthritis $25523, #6 Cancer $25366
+- Average Medical Cost by Hospital: #1 PLC Garner $52182, #2 Ruiz-Anthony $52154, #3 George-Gonzalez $52102
+- Average Medical cost by Admission Type: #1 Elective $25718, #2 Emergency $25595, #3 Urgent $25583
+  
+📌 Insight: Chronic conditions like obesity, asthma, and diabetes drive hospital costs, suggesting a **focus on preventive care programs, patient education, and lifestyle interventions** to reduce long-term healthcare spending.
 
-- Top Conditions: #1 Arthritis (9,308 cases), followed by Diabetes (9,304), HTN (9,245), Obesity (9,231), Cancer (9,227), and Asthma (9,185).
-
-- Billing Cost per Condition: Obesity ($25,806) incurs the highest average billing cost, followed by Diabetes ($25,638) and Asthma ($25,635).
-
-- Length of Stay: Certain conditions require a longer hospital stay, impacting resource allocation and costs.
-
-📌 Insight: Chronic conditions like obesity, diabetes, and arthritis drive hospital costs, suggesting a focus on preventive care programs to reduce long-term healthcare spending.
-
-- Certain patients had multiple hospital visits, indicating poor disease management.
-
-📌 Insight: Identifying frequent readmissions and its related medical conditions can help in reducing unnecessary costs by focusing on post-discharge care and chronic disease management. To have targeted interventions for high-readmission patients to improve long-term healthcare outcomes.
+**Patient Demographics & Admission Trends**
+- Top Medical Conditions: #1 Arthritis 7059, #2 Diabetes 6953, #3 Cancer 6867  #4 HTN 6858 #5 Obesity 6837, #6 Asthma 6808
+- Patient distribution by age: Geriatrics: 12775, Adults 28607
+- Patient distribution by gender: Female: 20726, Male 20656 
+- Average Length of Stay by Medical Conditon: All conditions had an average LOS of 15 days (could be due to synthetic data. If this were real data, a uniform LOS would indicate rigid hospital policies rather than patient-specific discharge planning, which could be inefficient.) 
