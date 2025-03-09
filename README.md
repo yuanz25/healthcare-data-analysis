@@ -79,6 +79,7 @@ This project transforms data insights into practical recommendations for more *
       
 
 **📌 More Analytical Questions to explore on with Pivot Tables**
+View [here]([url](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Analysing%20Healthcare%20Data%20with%20Pivot%20Tables.xlsx)) for Excel file 
 
 For analysing Operations:
 - Is there a correlation between length of stay and billing amount?
@@ -91,7 +92,12 @@ For analysing Medical Conditions:
 - Which medical conditions contribute the most to high hospital costs?
 - What is the average billing amount by medical condition?
 
-
+![Dashboard Analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Exploratory%20Analysis%20using%20Pivot%20Dashboard.png)
+**Key Insights**
+1.  Admission Trends by Month: Identifies seasonal fluctuations and peak periods. February is usually the lull period.
+2.  A scatter plot analysis showing a weak R² value suggests no strong relationship between a patient’s length of stay and their billing amount.
+3.  Medical conditions such as Arthritis, Diabetes, and Cancer have the highest admission counts.
+4.  Demographic Breakdown by Age & Gender displays not much significant disparities in the prevalence of various medical conditions. 
 
 
 ## 2. Using SQL to do further data cleaning and aggregation 
