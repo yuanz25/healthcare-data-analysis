@@ -1,6 +1,6 @@
 **📊 Project Summary**
 
-This project leverages data from **55,500 patient records** to uncover key factors influencing **hospital costs**, **admissions**, and **patient outcomes**.
+This project leverages data from **55,500 synthetic patient records** to uncover key factors influencing **hospital costs**, **admissions**, and **patient outcomes**.
 Dataset from: https://www.kaggle.com/datasets/prasad22/healthcare-dataset/data
 
 **🎯 Goals**
@@ -25,7 +25,7 @@ Efficiently utilize healthcare resources to improve patient outcomes through ide
 
 
 **📌 Expected Outcome**
-This project transforms data insights into practical recommendations for more **cost-effective hospital management** and better **patient care**.
+This project transforms data insights into practical recommendations for more cost-effective hospital management and better patient care.
 
 
 
@@ -74,14 +74,13 @@ This project transforms data insights into practical recommendations for more *
 - Standardized text formatting (For Name: removed extra spaces using TRIM, converted to “Capitalize Each Word”).
 - Standardized number formatting (Billling amount to currency) 
 - Examine summary statistics for all variables and identify if any missing values (fill in with appropriate data or remove irrelevant column).
-- Noticed multiple records with the same patient names but varying Age, Admission Date, and other details. This was flagged as a **potential data quality issue ** due to inconsistent handling of duplicate entries. Ideally, using a unique identifier such as Admission ID or Visit ID would resolve this issue. Decided not to remove duplicates based solely on Patient Name, since multiple admissions are common for the same patient.
+- Noticed multiple records with the same patient names but varying Age, Admission Date, and other details. This was flagged as a **potential data quality issue** due to inconsistent handling of duplicate entries. Ideally, using a unique identifier such as Admission ID or Visit ID would resolve this issue. Decided not to remove duplicates based solely on Patient Name at this step, since multiple admissions are possible for the same patient.
     
       
 
 **📌 More Analytical Questions to explore on with Pivot Tables**
 
-
-[View here for Excel File]([https://github.com/yuanz25/healthcare-data-analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Analysing%20Healthcare%20Data%20with%20Pivot%20Tables.xls))
+(https://github.com/yuanz25/healthcare-data-analysis/blob/main/Analysing%20Healthcare%20Data%20with%20Pivot%20Tables.xls))
 
 
 For analysing Operations:
@@ -98,7 +97,7 @@ For analysing Medical Conditions:
 ![Dashboard Analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Exploratory%20Analysis%20using%20Pivot%20Dashboard.png)
 
 **Key Insights**
-1.  Admission Trends by Month: Identifies seasonal fluctuations and peak periods. February is usually the lull period.
+1.  Admission Trends by Month: Identifies seasonal fluctuations and peak periods. 
 2.  A scatter plot analysis showing a weak R² value suggests no strong relationship between a patient’s length of stay and their billing amount.
 3.  Medical conditions such as Arthritis, Diabetes, and Cancer have the highest admission counts.
 4.  Demographic Breakdown by Age & Gender displays not much significant disparities in the prevalence of various medical conditions. 
@@ -118,7 +117,6 @@ I’m using Microsoft SQL Server Management Studio.
 - The query revealed **10,977 rows** with duplicates where all columns were identical except for Age, suggesting that these were likely the same patients with inconsistent data entry.
 - To resolve this, we decided to retain only the first occurrence of each duplicate record. We used CTE with the ROW_NUMBER() Windows function where the MAX(Age) to keep only the maximum age, assuming it's updated over time.
 - After cleaning the duplicates, a query was run to verify that no duplicates remained in the dataset
-
 
 
 
@@ -144,6 +142,8 @@ Key SQL Skills Demonstrated:
 
 **Patient Demographics & Admission Trends**
 - Top Medical Conditions: #1 Arthritis 7059, #2 Diabetes 6953, #3 Cancer 6867  #4 HTN 6858 #5 Obesity 6837, #6 Asthma 6808
+  📌 Insight: Better care programs or pain management plans can be implemented for Arthritis patients to reduce the admissions (likely due to pain exacerbations). 
 - Patient distribution by age: Geriatrics: 12775, Adults 28607
 - Patient distribution by gender: Female: 20726, Male 20656 
-- Average Length of Stay by Medical Conditon: All conditions had an average LOS of 15 days (could be due to synthetic data. If this were real data, a uniform LOS would indicate rigid hospital policies rather than patient-specific discharge planning, which could be inefficient.) 
+- Average Length of Stay by Medical Conditon: All conditions had an average LOS of 15 days
+  📌 Insight: This could be due to synthetic data resulting in no pattern. If this were real data, a uniform LOS would indicate rigid hospital policies rather than patient-specific discharge planning, which could be inefficient. 
