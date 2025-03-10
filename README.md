@@ -78,42 +78,21 @@ This project transforms data insights into practical recommendations for more c
     
       
 
-**📌 More Analytical Questions to explore on with Pivot Tables**
-
-For analysing Operations:
-- Is there a correlation between length of stay and billing amount?
-- What patterns exist in admission types (emergency vs. routine) across hospitals?
-- Are there seasonal trends in hospital admissions?
-
-For analysing Medical Conditions:
-- What are the most common medical conditions among different age groups?
-- Are specific medical conditions more prevalent in certain demographics (e.g., age, gender)?
-- Which medical conditions contribute the most to high hospital costs?
-- What is the average billing amount by medical condition?
-
-![Dashboard Analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Exploratory%20Analysis%20using%20Pivot%20Dashboard.png)
-
-**Key Insights**
-1.  Admission Trends by Month: Identifies seasonal fluctuations and peak periods. 
-2.  A scatter plot analysis showing a weak R² value suggests no strong relationship between a patient’s length of stay and their billing amount.
-3.  Medical conditions such as Arthritis, Diabetes, and Cancer have the highest admission counts.
-4.  Demographic Breakdown by Age & Gender displays not much significant disparities in the prevalence of various medical conditions. 
-
 
 ## 2. Using SQL to do further data cleaning and aggregation 
 I’m using Microsoft SQL Server Management Studio. 
 
 **Negative Billing Amounts:** 
-- Identified that several entries for Billing Amount were negative, which could be indicative of data errors (refunds, billing adjustments, etc.).
+- Identified that 108 data entries for Billing Amount were negative, which could be indicative of data errors (refunds, billing adjustments, etc.).
 - Removed these entries from the dataset to prevent them from skewing the analysis and visualizations, particularly when focusing on understanding patient costs and billing trends.
-- This decision was made with the goal of providing a more accurate representation of the actual charges incurred during hospital stays.
+- This decision was made with the goal of providing a more accurate representation of the actual charges incurred during hospital stays, although it would not make much of an impact as it only consists of 0.2% of dataset.
 
 
 **Duplicate Patient Records:**
-- Used Common Table Expression CTE to identify duplicate patient records in the dataset. Duplicates were defined as having the same Name, Date of Admission, Medical Condition, and Insurance Provider. 
+- Used Common Table Expression CTE and Self-Join to identify duplicate patient records in the dataset. Duplicates were defined as having the same Name, Date of Admission, Medical Condition, and Insurance Provider by using GROUPBY function. 
 - The query revealed **10,977 rows** with duplicates where all columns were identical except for Age, suggesting that these were likely the same patients with inconsistent data entry.
 - To resolve this, we decided to retain only the first occurrence of each duplicate record. We used CTE with the ROW_NUMBER() Windows function where the MAX(Age) to keep only the maximum age, assuming it's updated over time.
-- After cleaning the duplicates, a query was run to verify that no duplicates remained in the dataset
+- After cleaning the duplicates, a query was run to verify that no duplicates remained in the dataset.
 
 
 
@@ -153,3 +132,13 @@ Key SQL Skills Demonstrated:
 - Patient distribution by age: Geriatrics: 12775, Adults 28607
     
 📌 Insight: Geriatrics make up about 1/3 of the patient profile, hence hospitals can enhance geriatric care. 
+
+## 2. Visualization on a Pivot Table Dashboard 
+![Dashboard Analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Exploratory%20Analysis%20using%20Pivot%20Dashboard.png)
+
+**Key Insights**
+1.  Admission Trends by Month: Identifies seasonal fluctuations and peak periods. 
+2.  A scatter plot analysis showing a weak R² value suggests no strong relationship between a patient’s length of stay and their billing amount.
+3.  Medical conditions such as Arthritis, Diabetes, and Cancer have the highest admission counts.
+4.  Demographic Breakdown by Age & Gender displays not much significant disparities in the prevalence of various medical conditions. 
+
