@@ -80,9 +80,6 @@ This project transforms data insights into practical recommendations for more c
 
 **📌 More Analytical Questions to explore on with Pivot Tables**
 
-(https://github.com/yuanz25/healthcare-data-analysis/blob/main/Analysing%20Healthcare%20Data%20with%20Pivot%20Tables.xls))
-
-
 For analysing Operations:
 - Is there a correlation between length of stay and billing amount?
 - What patterns exist in admission types (emergency vs. routine) across hospitals?
@@ -140,10 +137,19 @@ Key SQL Skills Demonstrated:
   
 📌 Insight: Chronic conditions like obesity, asthma, and diabetes drive hospital costs, suggesting a **focus on preventive care programs, patient education, and lifestyle interventions** to reduce long-term healthcare spending.
 
+
 **Patient Demographics & Admission Trends**
 - Top Medical Conditions: #1 Arthritis 7059, #2 Diabetes 6953, #3 Cancer 6867  #4 HTN 6858 #5 Obesity 6837, #6 Asthma 6808
-  📌 Insight: Better care programs or pain management plans can be implemented for Arthritis patients to reduce the admissions (likely due to pain exacerbations). 
+
+📌 Insight: Better care programs or pain management plans can be implemented for Arthritis patients to reduce the admissions (likely due to pain exacerbations). 
+
+
+- Average Length of Stay by Medical Conditon: All conditions had an average LOS of 15 days.
+  
+📌 Insight: This could be due to synthetic data resulting in no pattern. If this were real data, a uniform LOS would indicate rigid hospital policies rather than patient-specific discharge planning, which could be inefficient. 
+
+
+- Patient distribution by gender: Female: 20726, Male 20656
 - Patient distribution by age: Geriatrics: 12775, Adults 28607
-- Patient distribution by gender: Female: 20726, Male 20656 
-- Average Length of Stay by Medical Conditon: All conditions had an average LOS of 15 days
-  📌 Insight: This could be due to synthetic data resulting in no pattern. If this were real data, a uniform LOS would indicate rigid hospital policies rather than patient-specific discharge planning, which could be inefficient. 
+    
+📌 Insight: Geriatrics make up about 1/3 of the patient profile, hence hospitals can enhance geriatric care. 
