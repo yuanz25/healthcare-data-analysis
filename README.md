@@ -133,7 +133,7 @@ Key SQL Skills Demonstrated:
     
 📌 Insight: Geriatrics make up about 1/3 of the patient profile, hence hospitals can enhance geriatric care. 
 
-## 2. Visualization on a Pivot Table Dashboard 
+## 3. Visualization on a Pivot Table Dashboard 
 ![Dashboard Analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Exploratory%20Analysis%20using%20Pivot%20Dashboard.png)
 
 **Key Insights**
