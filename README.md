@@ -1,19 +1,19 @@
 **📊 Project Summary**
 
-This project leverages data from **55,500 synthetic patient records** to uncover key factors influencing **hospital costs**, **admissions**, and **patient outcomes**.
+This project leverages data from **55,500 synthetic patient hospitalization records** to uncover key factors influencing **hospital costs**, **admissions**, and **patient outcomes**.
 Dataset from: https://www.kaggle.com/datasets/prasad22/healthcare-dataset/data
 
 **🎯 Goals**
 
 **1. Optimize Resource Allocation**
-Efficiently utilize healthcare resources through identifying areas to reduce hospital billing amounts. 
+Identify areas to reduce healthcare costs. 
 >
 > Key metrics:
 > - Average billing amount by medical condition, hospital and admission type
 
 
 **2. Patient Demographics & Admission Trends**
-> Understand patient demographics to improve services
+> Understand patient demographics to pinpoint areas for improving patient care.
 >
 > Key metrics:
 > - Admission count by medical condition
