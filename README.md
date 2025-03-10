@@ -10,16 +10,14 @@ Efficiently utilize healthcare resources to improve patient outcomes through ide
 >
 > Key metrics:
 >- Average billing amount by medical condition, hospital and admission type
->- Average length of stay by condition 
 
 
 **2. Patient Demographics & Admission Trends**
 > Understand patient demographics to improve services
 >
 > Key metrics:
+> - Admission count by medical condition
 > - Patient distribution by age and gender
-> - Most common medical conditions by age group
-> - Admission type breakdown by gender and hospital
 > - Average length of stay by medical condition
 
 
