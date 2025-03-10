@@ -6,10 +6,10 @@ Dataset from: https://www.kaggle.com/datasets/prasad22/healthcare-dataset/data
 **🎯 Goals**
 
 **1. Optimize Resource Allocation**
-Efficiently utilize healthcare resources to improve patient outcomes through identifying factors that influence hospital billing amounts. Pinpoint areas where hospitals can reduce unnecessary expenses.
+Efficiently utilize healthcare resources through identifying areas to reduce hospital billing amounts. 
 >
 > Key metrics:
->- Average billing amount by medical condition, hospital and admission type
+> - Average billing amount by medical condition, hospital and admission type
 
 
 **2. Patient Demographics & Admission Trends**
