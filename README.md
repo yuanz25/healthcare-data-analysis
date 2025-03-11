@@ -50,9 +50,10 @@ This project transforms data insights into practical recommendations for more c
 
 **1. Data Cleanup & Initial Exploration using Excel/Power Query**
 
-(a) Inspect the **column names and data types**.
-- Convert date, number, and currency columns to proper structured format.
-- Changed formatting of “Billing Amount” from Numbers > Currency
+(a) Inspect the **column names and data types** 
+- Determine key columns to work with.
+- Examine summary statistics for all variables and identify if any missing values (fill in with appropriate data or remove irrelevant column).
+
 - Create calculated columns.
   (i) “Age Category” range:
             
@@ -68,14 +69,12 @@ This project transforms data insights into practical recommendations for more c
             - Under Transform: Change data type to “Days”
 
         
-(b) Detect **inconsistent or strange data**.
-- Standardized text formatting (For Name: removed extra spaces using TRIM, converted to “Capitalize Each Word”).
-- Standardized number formatting (Billling amount to currency) 
-- Examine summary statistics for all variables and identify if any missing values (fill in with appropriate data or remove irrelevant column).
+(b) Detect **inconsistent data**.
+- Standardized text formatting (For Name: removed extra spaces using TRIM, converted to “Capitalize Each Word”) and number formatting (Billling amount to currency) 
+
 - Noticed multiple records with the same patient names but varying Age, Admission Date, and other details. This was flagged as a **potential data quality issue** due to inconsistent handling of duplicate entries. Ideally, using a unique identifier such as Admission ID or Visit ID would resolve this issue. Decided not to remove duplicates based solely on Patient Name at this step, since multiple admissions are possible for the same patient.
     
       
-
 
 ## 2. Using SQL to do further data cleaning and aggregation 
 I’m using Microsoft SQL Server Management Studio. 
