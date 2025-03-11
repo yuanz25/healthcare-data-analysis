@@ -132,11 +132,11 @@ Key SQL Skills Demonstrated:
 📌 Insight: Geriatrics make up about 1/3 of the patient profile, hence hospitals can enhance geriatric care. 
 
 ## 3. Visualization on a Pivot Table Dashboard 
-![Dashboard Analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Exploratory%20Analysis%20using%20Pivot%20Dashboard.png)
+![Dashboard Analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Pivot%20Dashboard.png)
 
 **Key Insights**
-1.  Admission Trends by Month: Identifies seasonal fluctuations and peak periods. 
-2.  A scatter plot analysis showing a weak R² value suggests no strong relationship between a patient’s length of stay and their billing amount.
-3.  Medical conditions such as Arthritis, Diabetes, and Cancer have the highest admission counts.
+1.  Admission Trends by Month to identify seasonal fluctuations and peak periods. February is often a lull season, and July-August has a spike in admissions.
+2.  A scatter plot analysis showing a weak R² value suggests no relationship between a patient’s length of stay and their billing amount, which can be used in financial counselling when patients wish to discharge against medical advice (AOR).
+3.  Medical conditions such as Arthritis and Diabetes have the highest admission counts - better preventive and disease management programs can be implemented to target these conditions.
 4.  Demographic Breakdown by Age & Gender displays not much significant disparities in the prevalence of various medical conditions. 
 
