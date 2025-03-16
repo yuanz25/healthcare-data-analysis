@@ -6,8 +6,9 @@ Dataset from: https://www.kaggle.com/datasets/prasad22/healthcare-dataset/data
 **🎯 Goals**
 
 **1. Optimize Resource Allocation**
-Identify areas to reduce healthcare costs. 
->
+
+> Identify areas to reduce healthcare costs.
+> 
 > Key metrics:
 > - Average billing amount by medical condition, hospital and admission type
 
