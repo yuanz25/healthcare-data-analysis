@@ -48,6 +48,7 @@ This project transforms data insights into practical recommendations for more c
 | **Medication** | Prescribed drugs | String | Insulin |
 | **Test Results** | Medical test outcomes | String | Normal |
 
+---
 
 **1. Data Cleanup & Initial Exploration using Excel/Power Query**
 
@@ -105,7 +106,7 @@ Key SQL Skills Demonstrated:
 
 **Window Functions**: Implemented RANK(), DENSE_RANK(), and PARTITION BY to rank hospitals based on billing costs and compare patient statistics.
 
-
+---
 
 **Optimizing Resource Allocation**
 - Average Medical Cost by Medical Condition: #1 Obesity $25844, #2 Asthma $25805 #3 Diabetes $25716, #4 HTN $25546, #5 Arthritis $25523, #6 Cancer $25366
@@ -131,12 +132,14 @@ Key SQL Skills Demonstrated:
     
 📌 Insight: Geriatrics make up about 1/3 of the patient profile, hence hospitals can enhance geriatric care. 
 
+---
+
 ## 3. Visualization on a Pivot Table Dashboard 
-![Dashboard Analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Pivot%20Dashboard.png)
+![Dashboard Analysis](https://github.com/yuanz25/healthcare-data-analysis/blob/main/Pivot%20Table%20Chart.png)
 
 **Key Insights**
 1.  Admission Trends by Month to identify seasonal fluctuations and peak periods. February is often a lull season, and July-August has a spike in admissions.
 2.  A scatter plot analysis showing a weak R² value suggests no relationship between a patient’s length of stay and their billing amount, which can be used in financial counselling when patients wish to discharge against medical advice (AOR).
 3.  Medical conditions such as Arthritis and Diabetes have the highest admission counts - better preventive and disease management programs can be implemented to target these conditions.
-4.  Demographic Breakdown by Age & Gender displays not much significant disparities in the prevalence of various medical conditions. 
-
+4.  More Geriatrics (aged 65+) care specializations can be considered. Demographic Breakdown by Age & Gender displays not much significant disparities throughout the various medical conditions. 
+e
