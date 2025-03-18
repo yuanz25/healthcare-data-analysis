@@ -109,9 +109,9 @@ Key SQL Skills Demonstrated:
 ---
 
 **Optimizing Resource Allocation**
-- Average Medical Cost by Medical Condition: #1 Obesity $25844, #2 Asthma $25805 #3 Diabetes $25716, #4 HTN $25546, #5 Arthritis $25523, #6 Cancer $25366
-- Average Medical Cost by Hospital: #1 PLC Garner $52182, #2 Ruiz-Anthony $52154, #3 George-Gonzalez $52102
-- Average Medical cost by Admission Type: #1 Elective $25718, #2 Emergency $25595, #3 Urgent $25583
+- Average Medical Cost by **Medical Condition**: #1 Obesity ($25,844), #2 Asthma ($25,805) #3 Diabetes ($25,716), #4 HTN ($25,546), #5 Arthritis ($25,523), #6 Cancer ($25,366)
+- Average Medical Cost by **Hospital**: #1 PLC Garner ($52,182), #2 Ruiz-Anthony ($52,154), #3 George-Gonzalez ($52,102)
+- Average Medical Cost by **Admission Type**: #1 Elective ($25,718), #2 Emergency ($25,595), #3 Urgent ($25,583)
   
 📌 Insight: Chronic conditions like obesity, asthma, and diabetes drive hospital costs, suggesting a **focus on preventive care programs, patient education, and lifestyle interventions** to reduce long-term healthcare spending.
 
